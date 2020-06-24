@@ -138,21 +138,21 @@ module.exports = {
     ['check-md', { pattern: '**/*.md', strictExt: true }],
     ['sitemap', { hostname: 'https://docs.meilisearch.com' }],
     ['seo', {}],
-    'vuepress-plugin-element-tabs',
-    // ['vuepress-plugin-container', { type: 'note' }],
-    // [require('./config-path-checker')],
-    // [require('./custom-markdown-rules')],
-    // [require('./code-samples')],
-    // [
-    //   'meilisearch',
-    //   {
-    //     hostUrl: 'https://docs-search-bar.meilisearch.com',
-    //     apiKey:
-    //       'd79226ae89f29d4dadba8d0c30c240e435f584fb83a7ae573b13eb62edec35cd',
-    //     indexUid: 'docs',
-    //     placeholder: 'Search as you type...',
-    //   },
-    // ],
+    // 'vuepress-plugin-element-tabs',
+    ['vuepress-plugin-container', { type: 'note' }],
+    [require('./config-path-checker')],
+    [require('./custom-markdown-rules')],
+    [require('./code-samples')],
+    [
+      'meilisearch',
+      {
+        hostUrl: 'https://docs-search-bar.meilisearch.com',
+        apiKey:
+          'd79226ae89f29d4dadba8d0c30c240e435f584fb83a7ae573b13eb62edec35cd',
+        indexUid: 'docs',
+        placeholder: 'Search as you type...',
+      },
+    ],
   ],
   head: [
     ['meta', { charset: 'utf-8' }],
