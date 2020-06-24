@@ -22,7 +22,7 @@ MeiliSearch is open source. You can **support the project by starring** [our Git
 
 ## Demo
 
-![crates.io demo gif](/crates-io-demo.gif)
+<!-- ![crates.io demo gif](/crates-io-demo.gif) -->
 
 > Meilisearch helps the Rust community find crates on [crates.meilisearch.com](https://crates.meilisearch.com)
 
