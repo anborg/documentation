@@ -2,7 +2,7 @@
 
 ## Download and launch
 
-:::: tabs
+<!-- :::: tabs
 
 ::: tab cURL
 Download the **latest stable release** of MeiliSearch with **curl**.
@@ -88,7 +88,7 @@ $ ./target/release/meilisearch
 
 :::
 
-::::
+:::: -->
 
 ## Configuration Options
 

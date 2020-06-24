@@ -1,6 +1,6 @@
 <template>
   <div>
-    <tabs v-if="samples" type="border-card">
+    <!-- <tabs v-if="samples" type="border-card">
       <tab
         v-for="sample in samples"
         :key="sample.language"
@@ -11,7 +11,7 @@
     </tabs>
     <tabs v-else type="border-card">
       No example found
-    </tabs>
+    </tabs> -->
   </div>
 </template>
 
