@@ -42,7 +42,7 @@ Results are sorted by **the similarity of the matched words with the query words
 
 #### Examples
 
-<!-- :::: tabs
+:::: tabs
 
 ::: tab Typo
 
@@ -100,7 +100,7 @@ The `word position` rule sorts the results by increasing matching word's index n
 
 :::
 
-:::: -->
+::::
 
 ## Order of the rules
 
