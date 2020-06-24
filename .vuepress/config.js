@@ -138,7 +138,7 @@ module.exports = {
     ['check-md', { pattern: '**/*.md', strictExt: true }],
     ['sitemap', { hostname: 'https://docs.meilisearch.com' }],
     ['seo', {}],
-    // 'vuepress-plugin-element-tabs',
+    'vuepress-plugin-element-tabs',
     ['vuepress-plugin-container', { type: 'note' }],
     [require('./config-path-checker')],
     [require('./custom-markdown-rules')],

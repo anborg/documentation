@@ -6,7 +6,7 @@ This quick tour will help you get started with MeiliSearch in only a few steps.
 
 First of all, let's run MeiliSearch.
 
-:::: tabs
+<!-- :::: tabs
 ::: tab cURL
 Download the **latest stable release** of MeiliSearch with **curl**.
 
@@ -91,7 +91,7 @@ $ ./target/release/meilisearch
 
 :::
 
-::::
+:::: -->
 
 [Environment variables and options](/guides/advanced_guides/configuration.md) can be set before and on launch to configure MeiliSearch. Amongst all the options, you can use the **master key** and the **port** options.
 
@@ -108,7 +108,7 @@ Indexes can be comparable to SQL tables. Since MeiliSearch is <clientGlossary wo
 
 In order to be able to store your documents in an index, it is required you create one first.
 
-:::: tabs
+<!-- :::: tabs
 
 ::: tab cURL
 
@@ -221,7 +221,7 @@ func main() {
 [About this package](https://github.com/meilisearch/meilisearch-go/)
 :::
 
-::::
+:::: -->
 
 [API references](/references/indexes.md)
 
@@ -237,7 +237,7 @@ There are [several ways to let MeiliSearch know what the primary key](/guides/ma
 
 Below is an example to showcase how to add documents using the following test dataset: [movies.json](https://github.com/meilisearch/MeiliSearch/blob/master/datasets/movies/movies.json).
 
-:::: tabs
+<!-- :::: tabs
 ::: tab cURL
 
 ```bash
@@ -319,7 +319,7 @@ fmt.Println(updateRes.UpdateID)
 [About this package](https://github.com/meilisearch/meilisearch-go/)
 :::
 
-::::
+:::: -->
 
 [API references](/references/documents.md)
 
@@ -343,7 +343,7 @@ MeiliSearch [offers many parameters](/guides/advanced_guides/search_parameters.m
 
 The search engine is now aware of your documents and can serve those via an HTTP server.
 
-:::: tabs
+<!-- :::: tabs
 ::: tab cURL
 
 ```bash
@@ -402,7 +402,7 @@ fmt.Println(searchRes.Hits)
 [About this package](https://github.com/meilisearch/meilisearch-go/)
 :::
 
-::::
+:::: -->
 
 MeiliSearch **response**:
 
@@ -443,6 +443,6 @@ This will lead you to a web page with a search bar that will allow you to search
 
 ![movies demo gif](/movies-web-demo.gif)
 
-::: warning
+<!-- ::: warning
 Since the production environment requires an API-key for searching, the web interface is only available in [development mode](/guides/advanced_guides/configuration.md#environment).
-:::
+::: -->
