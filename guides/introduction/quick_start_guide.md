@@ -441,7 +441,7 @@ We also deliver an out-of-the-box [web interface](/guides/advanced_guides/web_in
 To do so, open your web browser and enter MeiliSearch address (in our case: `http://127.0.0.1:7700`) into the browser address bar.
 This will lead you to a web page with a search bar that will allow you to search in the selected index.
 
-<!-- ![movies demo gif](/movies-web-demo.gif) -->
+![movies demo gif](/movies-web-demo.gif)
 
 ::: warning
 Since the production environment requires an API-key for searching, the web interface is only available in [development mode](/guides/advanced_guides/configuration.md#environment).
