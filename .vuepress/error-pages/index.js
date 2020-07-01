@@ -18,23 +18,18 @@ function sampleYamlToJs(content) {
 
 module.exports = {
   async additionalPages() {
-    // const rp = require('request-promise')
-    // const content = await rp('https://raw.githubusercontent.com/vuejs/vuepress/master/CHANGELOG.md')
     const errorYaml = fs.readFileSync(`${__dirname}/errors.yaml`, 'utf-8')
     const errors = sampleYamlToJs(errorYaml).errors
-    console.log({ errors: JSON.stringify(errors) })
-    const errorsPages = errors.map(err => {
-      console.log(' test')
-      return {
-        path: `/errors/${err.code}`,
-        content: `## ${err.code} \n ${err.description}`,
-      }
-    })
-    console.log(`## MeiliSearch Errors \n ${errors.map(err => `* [${err.code}](/errors/${err.code})\n`)}`);
-
+    const errorsPages = []
     errorsPages.push({
-      path: '/errors',
+      path: '/errors-list/', // Cannot be errors. Works in development mode but not production
       content: `## MeiliSearch Errors \n ${errors.map(err => `* [${err.code}](/errors/${err.code})\n`).join('')}`,
+    })
+    errors.map(err => {
+      errorsPages.push({
+        path: `/errors/${err.code}/`,
+        content: `## ${err.code} \n ${err.description}`,
+      })
     })
     return errorsPages
   },
